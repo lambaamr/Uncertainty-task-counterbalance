@@ -1,12 +1,12 @@
 <div class="slot-instructions">
   <div *ngIf="page === 1" class="welcome-text card">
-    <h2>Part 3</h2>
+    <h2>Part 2</h2>
     <div [innerHTML]="text"></div>
     <button (click)="setPage(page + 1)">Next</button>
   </div> <!-- #welcome-text -->
 
   <div *ngIf="page > 1" class="slot-instructions-text card">
-    <h2>Part 3 Instructions</h2>
+    <h2>Part 2 Instructions</h2>
     <div [innerHTML]="text"></div>
     <div class="slot-instructions-buttons">
       <button (click)="setPage(page - 1)">Back</button>
