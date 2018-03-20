@@ -12,7 +12,7 @@
       <button (click)="setPage(page - 1)">Back</button>
       <button *ngIf="page < maxPage" (click)="setPage(page + 1)">Next</button>
     </div> <!-- #instructions-buttons -->
-    <tg-nav-button *ngIf="page === maxPage" url="part3-quiz" label="Go to Quiz"></tg-nav-button>
+    <tg-nav-button *ngIf="page === maxPage" url="part2-quiz" label="Go to Quiz"></tg-nav-button>
   </div> <!-- #instruction-text -->
 
   <div *ngIf="page > 1" class="slot-instructions-image card"><img [src]="imgSrc"></div>
